@@ -1,0 +1,107 @@
+.App{
+    text-align: center;
+
+}
+
+thead{
+    display: block;
+}
+
+tbody {
+    display: block;
+    max-height: 60vh;
+    overflow-y: scroll;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0 auto;
+}
+
+#scrollbar::-webkit-scrollbar-track
+{
+    border:none;
+    background-color: none;
+}
+
+#scrollbar::-webkit-scrollbar
+{
+    width: 6px;
+    background-color: none;
+}
+
+#scrollbar::-webkit-scrollbar-thumb
+{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+
+thead th, tbody td {
+    min-width: 150px;
+    width: 25vh;
+}
+
+table {
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 25vh;
+    background-color: rgba(255,255,255,0.2);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+}
+
+th {
+    font-size: 2em;
+
+}
+
+td {
+    color: rgba(0,0,0,0.8);
+    font-size: 1.5em;
+}
+
+th a,
+td a {
+    color: black;
+    text-decoration: none;
+	display: block;
+	width: auto;
+}
+th a.sort-by { 
+	padding-right: 18px;
+	position: relative;
+}
+a.sort-by:before,
+a.sort-by:after {
+	border: 4px solid transparent;
+	content: "";
+	display: block;
+	height: 0;
+	right: 5px;
+	top: 50%;
+	position: absolute;
+	width: 0;
+}
+a.sort-by:before {
+	border-bottom-color: #666;
+	margin-top: -9px;
+}
+a.sort-by:after {
+	border-top-color: #666;
+	margin-top: 1px;
+}
+
+.form-container {
+    margin-top: 2em;
+}
+
+input {
+    text-align: center;
+    width: 10em;
+    height: 2em;
+    border: none;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 5px;
+}
