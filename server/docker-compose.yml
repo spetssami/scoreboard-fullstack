@@ -1,0 +1,11 @@
+version: '3.6'
+
+services:
+    scoreboard-server:
+        container_name: server
+        build: ./
+        command: npm start
+        working_dir: /usr/src/scoreboard-server
+        ports:
+            - "8080:8080"
+        
